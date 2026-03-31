@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background-color: #f4f7f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 350px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* 重点：模仿截图中的蓝色登录按钮 */
+        .action-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .btn-login {
+            background-color: #4eb1d4;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-login:hover {
+            background-color: #3f99b8;
+        }
+
+        .forgot-password {
+            color: #888;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* 重点：模仿截图中的游客登录按钮 */
+        .guest-login-container {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .btn-guest {
+            background-color: white;
+            color: #333;
+            border: 1px solid #ddd;
+            padding: 10px 0;
+            width: 100%;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .btn-guest:hover {
+            background-color: #f9f9f9;
+        }
+
+        .icon {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <div class="input-group">
+        <input type="text" placeholder="用户名/邮箱">
+    </div>
+    <div class="input-group">
+        <input type="password" placeholder="密码">
+    </div>
+
+    <div class="action-row">
+        <button class="btn-login">
+            <span class="icon">✓</span> 登录
+        </button>
+        <a href="#" class="forgot-password">密码丢失?</a>
+    </div>
+
+    <div class="guest-login-container">
+        <button class="btn-guest">
+            <span class="icon">👤</span> 以游客身份登录
+        </button>
+    </div>
+</div>
+
+</body>
+</html>
